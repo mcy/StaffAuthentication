@@ -1,0 +1,25 @@
+name: StaffAuthentication
+main: com.xorinc.staffauth.AuthPlugin
+version: 1.0.0
+author: drXor
+website: http://github.com/drXor
+description: >
+	    Bukkit plugin that creates a separate auth system for server staff.
+softdepend: []
+commands:
+  authenticate:
+    description: Authenticates a player.
+    permission: staffauth.auth
+    aliases: [auth]
+    usage: /<command>
+  authreload:
+    description: Allows reloading of authentication info.
+    permission: staffauth.authreload
+    usage: /<command>
+permissions:
+  staffauth.auth:
+      description: Allows authentication.
+      default: op
+  staffauth.authreload:
+      description: Allows reloading of authentication info.
+      default: op
